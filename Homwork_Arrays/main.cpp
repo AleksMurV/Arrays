@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
@@ -15,8 +15,8 @@ void main()
 
 	FillRand(arr, n);
 	Print(arr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(arr, n) << endl;
-	cout << "Ñðåäíåå-àðèôìèòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avg(arr, n) << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(arr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ-Ð°Ñ€Ð¸Ñ„Ð¼Ð¸Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avg(arr, n) << endl;
 
 }
 
@@ -29,7 +29,7 @@ void FillRand(int arr[], const int n, int minRand, int maxRand)
 		maxRand = buffer;
 	}
 	if (minRand == maxRand)maxRand++;
-	//Çàïîëíåíèå ñëó÷àéíûìè ÷èñëàìè
+	//Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
@@ -37,7 +37,7 @@ void FillRand(int arr[], const int n, int minRand, int maxRand)
 }
 void Print(int arr[], const int n)
 {
-	//Âûâîä ìàññèâà íà ýêðàí:
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";
